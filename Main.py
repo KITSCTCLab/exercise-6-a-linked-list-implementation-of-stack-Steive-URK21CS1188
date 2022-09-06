@@ -38,8 +38,8 @@ class Stack:
         print(ptr,end="")
         print("=>",end="")
         ptr=ptr.next
-      if(ptr==None):
-        print("None")
+        if(ptr==None):
+          print("None")
 # Do not change the following code
 stack = Stack()
 operations = []
