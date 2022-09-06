@@ -32,7 +32,7 @@ class Stack:
     if self.top==None:
       print("None")
     else:
-      ptr=Node(data)
+      ptr=Node()
       ptr=self.top
       while(ptr!=None):
         print(ptr,end="")
