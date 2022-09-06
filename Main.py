@@ -2,7 +2,7 @@ class Node:
   def __init__(self, data):
     self.data = data
     self.next = None
-
+    self.top=None
 
 class Stack:
   def __init__(self):
@@ -10,16 +10,33 @@ class Stack:
 
   def push(self, data) -> None:
     # Write your code here
-
+    new=Node(data)
+    new.data=data
+    new.next=top
+    self.top=new
   def pop(self) -> None:
     # Write your code here
-
+    if self.top==None:
+      print("underflow")
+    else:
+      #temp=Node(data)
+      temp=self.top
+      return temp
+      self.top=self.top.next
+      
   def status(self):
     """
     It prints all the elements of stack.
     """
     # Write your code here  
-
+    if self.top==None:
+      print("underflow")
+    else:
+      #ptr=Node(data)
+      ptr=self.top
+      while(ptr!=None):
+        print(ptr)
+        ptr=ptr.next
 
 # Do not change the following code
 stack = Stack()
