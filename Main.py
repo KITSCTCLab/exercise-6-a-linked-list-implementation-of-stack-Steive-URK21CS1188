@@ -12,12 +12,12 @@ class Stack:
     # Write your code here
     new=Node(data)
     new.data=data
-    new.next=top
+    new.next=self.top
     self.top=new
   def pop(self) -> None:
     # Write your code here
     if self.top==None:
-      print("underflow")
+      return None
     else:
       #temp=Node(data)
       temp=self.top
