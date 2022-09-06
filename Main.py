@@ -21,8 +21,10 @@ class Stack:
     else:
       #temp=Node(data)
       temp=self.top
-      return temp
       self.top=self.top.next
+      temp.next=None
+      return temp
+      
       
   def status(self):
     """
