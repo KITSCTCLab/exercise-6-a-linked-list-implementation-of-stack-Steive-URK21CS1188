@@ -30,14 +30,15 @@ class Stack:
     """
     # Write your code here  
     if self.top==None:
-      print("underflow")
+      print("None")
     else:
       #ptr=Node(data)
       ptr=self.top
       while(ptr!=None):
-        print(ptr)
+        print(ptr"=>")
         ptr=ptr.next
-
+      else:
+        print("None")
 # Do not change the following code
 stack = Stack()
 operations = []
