@@ -19,7 +19,7 @@ class Stack:
     if self.top==None:
       return None
     else:
-      temp=Node(data)
+      #temp=Node(data)
       temp=self.top
       return temp
       self.top=self.top.next
@@ -32,14 +32,14 @@ class Stack:
     if self.top==None:
       print("None")
     else:
-      ptr=Node(data)
+      #ptr=Node(data)
       ptr=self.top
       while(ptr!=None):
         print(ptr,end="")
         print("=>",end="")
         ptr=ptr.next
-#       if(ptr==None):
-#         print("None")
+      if(ptr==None):
+        print("None")
 # Do not change the following code
 stack = Stack()
 operations = []
