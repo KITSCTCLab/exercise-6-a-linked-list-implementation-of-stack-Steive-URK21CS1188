@@ -35,7 +35,7 @@ class Stack:
       #ptr=Node(data)
       ptr=self.top
       while(ptr!=None):
-        print(ptr,end="")
+        print(ptr.data,end="")
         print("=>",end="")
         ptr=ptr.next
         if(ptr==None):
